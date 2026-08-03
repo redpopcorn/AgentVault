@@ -1,5 +1,5 @@
 # AgentVault - Project Context
-
+"AgentVault is a multi-tenant platform for deploying and monitoring long-running AI agents. The problem it solves is that teams running autonomous agents have no visibility into what the agent is doing mid-execution — they can't tell if it's stuck, making a bad decision, or needs human input. AgentVault gives teams real-time streaming of every agent step via WebSockets, lets humans pause and approve critical decisions, and isolates each agent run in a Docker container with state checkpointed to PostgreSQL so agents can survive crashes and resume exactly where they left off."
 ## What This Is
 Multi-tenant AI agent orchestration platform.
 Users belong to tenants (workspaces) with RBAC roles.
