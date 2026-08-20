@@ -1,10 +1,12 @@
 import jwt from 'jsonwebtoken'
 import { env } from '@config/env'
 
+export type Role = 'admin' | 'member' | 'viewer'
+
 export interface JwtPayload {
   userId: number
   tenantId: number
-  role: 'admin' | 'member' | 'viewer'
+  role: Role
 }
 
 export const generateAccessToken = (payload: JwtPayload): string => {
